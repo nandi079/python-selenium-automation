@@ -19,3 +19,4 @@ def Create_an_account(context):
     context.driver.find_element(By.CSS_SELECTOR, "input[name='username'][inputmode='email']")
     context.driver.find_element(By.CSS_SELECTOR, "input[type='password']")
     sleep(3)
+

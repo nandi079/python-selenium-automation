@@ -30,3 +30,4 @@ def Account_policy(context):
     context.driver.find_element(By.CSS_SELECTOR, "a[href='/gp/help/customer/display.html/ref=ap_register_notification_privacy_notice?ie=UTF8&nodeId=468496']")
     context.driver.find_element(By.CSS_SELECTOR, "a[href*='ap_altreg_ab']")
     context.driver.find_element(By.CSS_SELECTOR, "a[class*='a-link-emphasis']")
+

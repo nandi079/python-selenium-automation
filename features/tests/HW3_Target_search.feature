@@ -6,3 +6,4 @@ Feature: Verify Cart Icon
     Given Target main page open
     When Click on Cart icon
     Then find Your cart is empty
+    

@@ -15,3 +15,4 @@ def Cart_icon(context):
 def find_cart_is_empty(context):
     context.driver.find_element(By.CSS_SELECTOR, "h1[class*='styles__StyledHeading']")
     sleep(4)
+
