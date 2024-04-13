@@ -15,3 +15,5 @@ Feature: Target products search test case
     Given Open target main page
     When Search for coffee
     Then Add to cart
+
+    #End Homework 4 tests
