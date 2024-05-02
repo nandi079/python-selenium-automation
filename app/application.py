@@ -1,8 +1,9 @@
 from pages.cart_page import CartPage
-from pages.main_page import MainPage
 from pages.header import Header
+from pages.main_page import MainPage
 from pages.search_results_page import SearchResultsPage
 from pages.signin_page import SignInPage
+from pages.target_app_page import TargetAppPage
 
 
 
@@ -15,6 +16,7 @@ class Application:
         self.main_page = MainPage(driver)
         self.search_results_page = SearchResultsPage(driver)
         self.signin_page = SignInPage(driver)
+        self.target_app_page = TargetAppPage(driver)
 
 
 
