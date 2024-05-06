@@ -1,7 +1,4 @@
-from selenium.webdriver.common.by import By
-from behave import given, when, then
-from time import sleep
-
+from behave import when, then
 
 
 @then('Click on Target Signin button')
@@ -34,13 +31,18 @@ def submit_login(context):
     context.app.signin_page.click_submit_login()
 
 
+@then('Verifies {expected_text} message is shown')
+def verify_account(context,expected_text):
+    context.app.signin_page.verify_account(expected_text)
+
+
+
+
+
 @then('Verify {expected_name} is logged in target page')
 def verify_user(context,expected_name):
     context.app.signin_page.verify_user_loggedin(expected_name)
 
-@given('Open sign_in page')
-def open_sign_in(context):
-    context.app.signin_page.open_sign_in_page()
 
 @when('store original window')
 def store_original_window(context):

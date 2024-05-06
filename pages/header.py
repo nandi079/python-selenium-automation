@@ -7,7 +7,7 @@ class Header(Page):
     SEARCH_INPUT = (By.ID, 'search')
     SEARCH_BTN = (By.XPATH, "//button[@data-test='@web/Search/SearchButton']")
     CART_ICON = (By.CSS_SELECTOR, "[data-test='@web/CartLink']")
-    SIGN_IN = (By.CSS_SELECTOR, "[aria-label='Account, sign in']")
+    #SIGN_IN = (By.CSS_SELECTOR, "[aria-label='Account, sign in']")
     INPUT_FIELD_NAME = (By.CSS_SELECTOR, "input[id='username'][value='sochniksochnik@tinyios.com']")
 
 
@@ -18,11 +18,11 @@ class Header(Page):
 
     def click_cart(self):
         self.click(*self.CART_ICON)
-        #self.wait_until_clickable_click(*self.CART_ICON)
 
-    def click_sign_in(self):
-        self.click(*self.SIGN_IN)
-        sleep(4)
+
+    #def click_sign_in(self):
+     #   self.click(*self.SIGN_IN)
+      #  sleep(4)
 
     def input_field(self, field):
         self.input_text(field, self.INPUT_FIELD_NAME)

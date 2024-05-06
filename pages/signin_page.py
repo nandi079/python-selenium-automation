@@ -12,6 +12,8 @@ class SignInPage(Page):
     SUBMIT_BUTTON = (By.CSS_SELECTOR, "button[type='submit']")
     VERIFY_LOGIN_NAME = (By.XPATH, "//a[@data-test='@web/AccountLink']")
     CLICK_LINK = (By.CSS_SELECTOR, "a[href='/c/terms-conditions/-/N-4sr7l']")
+    VERIFY_ACCOUNT_MESSAGE = (By.CSS_SELECTOR, "[data-test='authAlertDisplay']")
+
 
     def click_target_signin_button(self):
         self.click(*self.SIGNIN_BUTTON)
@@ -34,6 +36,12 @@ class SignInPage(Page):
     def password_field(self,text):
         self.input_text(text, *self.PASSWORD_FIELD_NAME)
         sleep(1)
+
+
+    def verify_account(self, text):
+        self.verify_text("We can't find your account.", *self.VERIFY_ACCOUNT_MESSAGE)
+        sleep(1)
+
 
     def click_submit_login(self):
         self.click(*self.SUBMIT_BUTTON)

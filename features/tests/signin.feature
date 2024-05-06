@@ -27,7 +27,15 @@ Feature: Click on signin button
 
 
 
-
+ Scenario: Verify Target login account page
+    Given Open Target main page
+    Then Click on Target Signin button
+    Then Click on Signin button on right side navigation
+    Then Verify Signin page opened
+    Then Input field nandinisarkar79@gmail.com is entered
+    Then Input password field Monday123 is entered
+    Then Click on submit button
+    Then Verifies We can't find your account. message is shown
 
 
 
