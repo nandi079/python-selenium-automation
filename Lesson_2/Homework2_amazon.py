@@ -63,16 +63,4 @@ sleep(10)
 
 print("Test Passed")
 
-
-
-
-#driver.find_element(By.XPATH,'//a[contains(@href,"ap_signin_notification_condition_of_use")]').click()
-#sleep(10)
-#if driver.find_elements(By.LINK_TEXT,"Conditions of Use"):
-#    print("Found Conditions of Use link")
-
-#if driver.find_elements(By.LINK_TEXT,"Privacy Notice"):
-#    print("Found Privacy Notice link")
-
-
 driver.quit()

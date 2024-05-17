@@ -25,12 +25,13 @@ def search_product(context, expected_item):
 
 @when('Click on Cart icon')
 def click_cart(context):
-    context.driver.find_element(*CART_ICON).click()
-
+    #context.driver.find_element(*CART_ICON).click()
+    context.app.header.click_cart()
 
 @when('Click on Add to Cart button')
 def click_add_to_cart(context):
-    context.driver.find_element(*ADD_TO_CART_BTN).click()  # always clicks on 1st Add to cart btn
+    context.driver.find_element(*ADD_TO_CART_BTN).click()
+    # always clicks on 1st Add to cart btn
     # Add multiple:
     # add_cart_btns = context.driver.find_elements(*ADD_TO_CART_BTN)
     # for btn in add_cart_btns[:5]:

@@ -1,0 +1,78 @@
+h2{
+    color: blue;
+}
+
+.header{
+    color: red;
+}
+
+#scuba {
+    color: red;
+}
+
+div#scuba h2 {
+    color: green;
+}
+===============================
+body{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.header {
+    background-color: #6c91cc;
+}
+
+
+===========================
+body{
+    color: #000000;
+    margin: 10px;
+    background-image: url('skyblue_world_map.jpg');
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
+div {
+    background-color: #ffffff;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.header {
+    background-color: #6c91cc;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#scuba {
+    background-image: url('biryani.jpg');
+
+}
+#divingsites {
+    text-align: center;
+}
+
+h2 {
+     text-align: center;
+ }
+
+ a:link {
+     color: green;
+ }
+
+a:visited {
+    color: red;
+  }
+
+a:hover {
+    color: blue;
+}
+
+a:active {
+    color: black;
+}
+
+
+

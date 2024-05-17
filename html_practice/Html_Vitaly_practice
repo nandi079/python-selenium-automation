@@ -1,0 +1,21 @@
+<div>This is a dic block</div><div>My second dic block</div>
+
+<span>Span element 1 </span><span>Span element 2</span>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Homepage</title>
+</head>
+<body>
+    <h1>H1 Element</h1>
+    <h2>H2 Element</h2>
+    <h3>H3 Element</h3>
+    <h4>H4 Element</h4>
+    <h5>H5 Element</h5>
+    <h6>H6 Element</h6>
+</body>
+</html>
